@@ -12,5 +12,5 @@ async def runtest():
     widget = await client.get_widget("477594964742635531")
     print(bot["id"], has_voted, user["id"], widget)
 asyncio.get_event_loop().run_until_complete(runtest())
-print("passed!")
+print("passed tests!")
 
