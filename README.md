@@ -1,5 +1,5 @@
 # boats.py
-The official [discord.boats](https://discord.boats) API wrapper for Python
+The official Python Library for the [discord.boats](https://discord.boats) API
 
 # Installation
 ## Install via pip (Recommended)
@@ -8,7 +8,7 @@ The official [discord.boats](https://discord.boats) API wrapper for Python
 ```
 git clone https://github.com/DiscordBoats/boats.py
 cd boats.py
-pip install -r requirements.txt
+pip install -r setup.txt
 ```
 
 # Examples
