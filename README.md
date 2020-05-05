@@ -8,7 +8,7 @@ The official Python Library for the [discord.boats](https://discord.boats) API
 ```
 git clone https://github.com/DiscordBoats/boats.py
 cd boats.py
-pip install -r setup.txt
+python setup.py install
 ```
 
 # Examples
