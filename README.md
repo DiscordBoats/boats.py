@@ -8,7 +8,7 @@ The official [discord.boats](https://discord.boats) API wrapper for Python
 ```
 git clone https://github.com/DiscordBoats/boats.py
 cd boats.py
-pip install -R requirements.txt
+pip install -r requirements.txt
 ```
 
 # Examples
