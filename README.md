@@ -1,5 +1,15 @@
 # boats.py
-The official discord.boats API wrapper for Python
+The official Python Library for the [discord.boats](https://discord.boats) API
+
+# Installation
+## Install via pip (Recommended)
+```pip install boats.py```
+## Install from source
+```
+git clone https://github.com/DiscordBoats/boats.py
+cd boats.py
+python setup.py install
+```
 
 # Examples
 ## Post stats
