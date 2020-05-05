@@ -6,7 +6,7 @@ The official [discord.boats](https://discord.boats) API wrapper for Python
 ```pip install boats.py```
 ## Install from source
 ```
-git clone https://github.com/DuckMasterAl/boats.py
+git clone https://github.com/DiscordBoats/boats.py
 cd boats.py
 pip install -R requirements.txt
 ```
