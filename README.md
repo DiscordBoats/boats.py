@@ -1,5 +1,5 @@
 # boats.py
-The official Python Library for the1 [discord.boats](https://discord.boats) API
+The official Python Library for the [discord.boats](https://discord.boats) API
 
 # Installation
 ## Install via pip (Recommended)
