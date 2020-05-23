@@ -32,7 +32,10 @@ class Discord_Boats(commands.Cog):
     @tasks.loop(minutes=30.0)
     async def update_stats(self):
         """This automatically updates your server count to discord.boats every 30 minutes."""
-        await dbpy.post_stats(self.bot.user.id, len(self.bot.guilds))
+        try:
+            await dbpy.post_stats(self.bot.user.id, len(self.bot.guilds))
+        except Exception as e:
+            print(f'Failed to post server count to discord.boats\n{type(e).__name__}: {e}')
 
 def setup(bot):
     bot.add_cog(Discord_Boats(bot))
@@ -51,7 +54,10 @@ class Discord_Boats(commands.Cog):
     async def update_stats(self):
         """This automatically updates your server count to discord.boats every 30 minutes."""
         while True:
-            await dbpy.post_stats(self.bot.user.id, len(self.bot.guilds))
+            try:
+                await dbpy.post_stats(self.bot.user.id, len(self.bot.guilds))
+            except Exception as e:
+                print(f'Failed to post server count to discord.boats\n{type(e).__name__}: {e}')
             await asyncio.sleep(1800)
 
 def setup(bot):
