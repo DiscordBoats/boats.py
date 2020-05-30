@@ -22,10 +22,11 @@ class Client:
         :param botid: Bot to post server count on
         :param server_count: Server count
         """
-
+        headers = {'Authorization': self.token}
         if not self.token:
             raise errors.InvalidTokenError("No token was supplied")
-        r = await self.session.post(self.baseurl+"bot/{}".format(botid), payload={"server_count": server_count})
+        r = await self.session.post(self.baseurl+"bot/{}".format(botid), json={'server_count': server_count}, headers=headers)
+
         if r.status != 200:
             raise errors.InvalidTokenError("Invalid token was supplied")
 
