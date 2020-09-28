@@ -70,7 +70,3 @@ class Client:
         :return str: Widget url
         """
         return self.baseurl+"widget/{}".format(botid)
-
-
-
-
