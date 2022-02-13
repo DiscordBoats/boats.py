@@ -25,7 +25,7 @@ class Discord_Boats(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
         self.update_stats.start()
-        self.dbpy = discordboats.Client("Token", loop=client.loop) # Token obtained from discord.boats
+        self.dbpy = discordboats.Client("Token") # Token obtained from discord.boats
 
     def cog_unload(self):
         self.update_stats.cancel()
@@ -52,7 +52,7 @@ class Discord_Boats(commands.Cog):
 
     def __init__(self, bot):
         self.bot = bot
-        self.dbpy = discordboats.Client("Token", loop=client.loop) # Token obtained from discord.boats
+        self.dbpy = discordboats.Client("Token") # Token obtained from discord.boats
         
     async def update_stats(self):
         """This automatically updates your server count to discord.boats every 30 minutes."""
