@@ -1,3 +1,6 @@
+# DEPRECATED
+The website this module is for has shutdown.
+
 # boats.py
 The official Python Library for the [discord.boats](https://discord.boats) API
 
